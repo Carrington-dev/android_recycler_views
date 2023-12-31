@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="24dp"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/enter_your_text"
+        android:textSize="16pt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        app:boxStrokeColor="@color/black"
+
+        android:hint="@string/enter_your_email">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filledTextField"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_your_name"
+        android:textColorHint="@color/black"
+        android:padding="13dp" />
+
+    <LinearLayout
+        android:id="@+id/uper_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/go_to_list_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/view_persons" />
+
+        <Button
+            android:id="@+id/add_to_db"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/add_now" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/uper_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/go_to_adapter_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/view_all" />
+
+        <Button
+            android:id="@+id/go_to_default_recycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/view_cars" />
+    </LinearLayout>
+
+</RelativeLayout>
