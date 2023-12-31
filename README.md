@@ -9,14 +9,14 @@ Dog
 ## Person
 
 Person
-    - name
-    - email
+  - name
+  - email
 
 ## Contact
 
 Contact
-    - name
-    - country
-    - date
-    - missed-call-icon
-    - info-icon
+  - name
+  - country
+  - date
+  - missed-call-icon
+  - info-icon
