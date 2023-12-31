@@ -25,7 +25,8 @@ public class ContactsActivity extends AppCompatActivity {
         ArrayList<Contact> contactArrayList = new ArrayList<>();
         for (int i = 0; i < 67; i++)
         {
-            contactArrayList.add(new Contact("+27 67 735 2242", "South Africa", "12/30", R.drawable.ic_phone_callback_24, R.drawable.baseline_123_24));
+            contactArrayList.add(new Contact("+27 67 735 2242", "South Africa",
+                    "12/30", R.drawable.ic_phone_callback_24, R.drawable.ic_info_icon));
         }
 
         ContactAdapter contactAdapter = new ContactAdapter(this, contactArrayList);
