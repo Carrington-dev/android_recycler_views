@@ -56,4 +56,6 @@
     <string name="south_africa">South Africa</string>
     <string name="date">12/31</string>
     <string name="contacts">Contacts</string>
+    <string name="initials">CM/25</string>
+    <string name="view_employees">Employees</string>
 </resources>

@@ -10,9 +10,11 @@ import android.widget.Button;
 
 import za.co.transcend.myportrait.lists.ContactsActivity;
 import za.co.transcend.myportrait.lists.DogsActivity;
+import za.co.transcend.myportrait.lists.EmployeeActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button addToDbButton, goToListButton, goToDogsRecyclerView, getGoToDefaultList, goToContacts;
+    Button employeesPageBtn;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         goToDogsRecyclerView = findViewById(R.id.go_to_adapter_view);
         addToDbButton = findViewById(R.id.add_to_db);
         goToContacts = findViewById(R.id.go_to_contacts);
+        employeesPageBtn = findViewById(R.id.view_employees);
+
+
 
         goToListButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AdapterViewActivity.class);
@@ -36,7 +41,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         goToContacts.setOnClickListener(v -> {
-            Intent intent = new Intent(this, ContactsActivity.class);
+            Intent intent = new Intent(MainActivity.this, ContactsActivity.class);
+            startActivity(intent);
+        });
+
+        employeesPageBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, EmployeeActivity.class);
             startActivity(intent);
         });
 

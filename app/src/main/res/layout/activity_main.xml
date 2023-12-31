@@ -105,12 +105,12 @@
             android:text="@string/view_all" />
 
         <Button
-            android:id="@+id/go_to_default_recycler"
+            android:id="@+id/view_employees"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:text="@string/view_cars" />
+            android:text="@string/view_employees" />
     </LinearLayout>
     <LinearLayout
         android:layout_below="@+id/middle_btns"
