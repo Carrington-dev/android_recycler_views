@@ -53,4 +53,7 @@
     <string name="carry_poolmasters_co_za">carry@poolmasters.co.za</string>
     <string name="view_persons">View People</string>
     <string name="view_cars">View cars</string>
+    <string name="south_africa">South Africa</string>
+    <string name="date">12/31</string>
+    <string name="contacts">Contacts</string>
 </resources>

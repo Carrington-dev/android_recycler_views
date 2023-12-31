@@ -86,6 +86,7 @@
             android:text="@string/add_now" />
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/middle_btns"
         android:layout_below="@+id/uper_btns"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,6 +106,32 @@
 
         <Button
             android:id="@+id/go_to_default_recycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/view_cars" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/middle_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="34dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/go_to_contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/contacts" />
+
+        <Button
+            android:id="@+id/see_more"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

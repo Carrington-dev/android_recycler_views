@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/call_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_phone_callback_24"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tel_name_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/carrington_muleya"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="09pt"
+            />
+        <TextView
+            android:id="@+id/tel_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/south_africa"
+            android:textColor="@color/black"
+            android:textStyle="italic|normal"
+            android:textSize="08pt"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tel_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="09pt"
+                android:gravity="end"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/tel_info"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/baseline_123_24"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

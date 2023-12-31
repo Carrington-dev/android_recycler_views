@@ -2,16 +2,19 @@ package za.co.transcend.myportrait;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import za.co.transcend.myportrait.lists.ContactsActivity;
 import za.co.transcend.myportrait.lists.DogsActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button addToDbButton, goToListButton, goToDogsRecyclerView, getGoToDefaultList;
+    Button addToDbButton, goToListButton, goToDogsRecyclerView, getGoToDefaultList, goToContacts;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         goToListButton = findViewById(R.id.go_to_list_view);
         goToDogsRecyclerView = findViewById(R.id.go_to_adapter_view);
         addToDbButton = findViewById(R.id.add_to_db);
+        goToContacts = findViewById(R.id.go_to_contacts);
 
         goToListButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AdapterViewActivity.class);
@@ -28,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         goToDogsRecyclerView.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, DogsActivity.class);
+            startActivity(intent);
+        });
+
+        goToContacts.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ContactsActivity.class);
             startActivity(intent);
         });
 
